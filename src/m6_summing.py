@@ -66,9 +66,10 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
+    total = 0
     for k in range(n):
-        ans = ans + math.cos(k)
-        return ans
+        total = total + (math.cos(k + 1))
+    return total
 
 
 
