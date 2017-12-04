@@ -15,14 +15,16 @@ import math
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
-    print_sequence1()
-    draw_circles1()
-    print_sequence2()
-    draw_circles2()
-    print_sequence3()
-    draw_circles3()
+    # print_sequence1()
+    # draw_circles1()
+    # print_sequence2()
+    # draw_circles2()
+    # print_sequence3()
+    # draw_circles3()
     print_cosines()
-    draw_cosines_and_sines()
+    # draw_cosines_and_sines()
+
+
 def print_sequence1():
     """
     Prints:
@@ -45,6 +47,7 @@ def print_sequence1():
     print('--------------------------------------------------')
     for k in range(21):
         print(k * 10)
+
 
 def draw_circles1():
     """
@@ -75,6 +78,7 @@ def draw_circles1():
 
     window.close_on_mouse_click()
 
+
 def print_sequence2():
     """
     Prints:
@@ -99,6 +103,7 @@ def print_sequence2():
     for k in range(18):
         num = num + 20
         print(num)
+
 
 def draw_circles2():
     """
@@ -133,6 +138,7 @@ def draw_circles2():
 
     window.close_on_mouse_click()
 
+
 def print_sequence3():
     """
     Prints:
@@ -154,6 +160,7 @@ def print_sequence3():
     print('--------------------------------------------------')
     for k in range(101):
         print(k)
+
 
 def draw_circles3():
     """
@@ -181,6 +188,7 @@ def draw_circles3():
 
     window.close_on_mouse_click()
 
+
 def print_cosines():
     """
     For each of the integers 0  1  2  ... 100,
@@ -200,7 +208,7 @@ def print_cosines():
        68.9855097830147
     """
     # ------------------------------------------------------------------
-    # TODO: 8. Implement this function, per its doc-string above.
+    # DONE: 8. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     #
@@ -215,9 +223,9 @@ def print_cosines():
     print('--------------------------------------------------')
     print('Running print_cosines:')
     print('--------------------------------------------------')
-    for k in range(101):
-        print(80* (math.cos(k)))
 
+    for k in range(101):
+        print(80 * (math.cos(k)))
 
 
 def draw_cosines_and_sines():
@@ -250,6 +258,7 @@ def draw_cosines_and_sines():
         circle.attach_to(window)
         window.render(0.01)
     window.close_on_mouse_click()
+
 
 # ----------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
